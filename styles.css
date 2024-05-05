@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('fondo.jpg');
+    background-size: cover;
+  background-attachment: fixed;
+    background-repeat: no-repeat;
+  color: #000;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    color: #000;
+}
+
+ion-icon {
+  font-size: 70px; 
+  color: #2BFF00;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column; /* Cambio a dirección de columna */
+    align-items: center; /* Centrar los botones horizontalmente */
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.icono {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px; /* Agrega espacio entre la imagen y el texto */
+    margin: 0 auto 5px;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 0px; /* Agrega espacio entre la imagen y el texto */
+    margin: 0 auto 0px;
+}
+
+.button-text {
+    display: block;
+    text-align: center;
+}
+
+a {
+  width: 200px;
+  text-decoration: none;
+    padding: 50px 100px;
+    font-size: 1em;
+    border: 2px solid #2BFF00;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  text-align: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.menu-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    z-index: 1000;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu-content h1 {
+    margin: 0;
+}
+
+.menu-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu-content ul li {
+    margin: 0 10px;
+}
+
+.menu-content ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu-content h1 {
+text-align: center;
+    color: white;
+  margin: 0px;
+}
+
+.menu-content img {
+  height: 40px;
+  text-align: center;
+}
+.menu-wrapper {
+    position: fixed; /* Fija el contenedor del menú */
+    top: 0;
+    width: 100%;
+}
+
+.menu-line {
+    border-bottom: 4px solid #2BFF00; /* Línea azul debajo del menú */
+}
+
+.line {
+    border-bottom: 3px solid #2BFF00; /* Línea azul debajo del menú */
+  height: 1px;
+}
+
+.menu-line1 {
+    border-bottom: 65px solid transparent; /* Línea azul debajo del menú */
+}
+
+.menu {
+    position: fixed; /* Fija el menú en la parte superior */
+    top: 0; /* Lo coloca en la parte superior */
+    width: 100%;
+   background-color: rgba(128, 128, 128, 0.8); /* Color gris transparente */
+    z-index: 1000; /* Asegura que esté por encima del resto del contenido */
+}
+
+header {
+    text-align: center;
+    padding: 100px 0; /* Espacio para el menú fijo */
+    color: #333;
+}
+
+p {
+    font-size: 1.0em;
+}
+
+/* Estilos adicionales para el contenido de la página */
+main {
+    padding: 30px;
+}
