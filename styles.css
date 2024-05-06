@@ -2,9 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url('fondo.jpg');
+    background-image: url('background.jpg');
     background-size: cover;
-  background-attachment: fixed;
     background-repeat: no-repeat;
   color: #000;
 }
@@ -16,8 +15,9 @@ header {
 }
 
 ion-icon {
-  font-size: 70px; 
+  font-size: 20px; 
   color: #2BFF00;
+  padding: 10px 1px;
 }
 
 h1 {
@@ -43,11 +43,12 @@ p {
     margin: 0 auto 5px;
 }
 
-.logo {
-    width: 30px;
-    height: 30px;
+.buttons img {
+    width: 150px;
+    height: 150px;
     margin-right: 0px; /* Agrega espacio entre la imagen y el texto */
     margin: 0 auto 0px;
+  border-radius: 5px;
 }
 
 .button-text {
@@ -55,6 +56,11 @@ p {
     text-align: center;
 }
 
+.button-text p {
+  text-align: normal;
+  align-items: normal;
+  justify-items: normal;
+}
 a {
   width: 200px;
   text-decoration: none;
