@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMMP - Servidores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>POCKETMINEMP <br>SERVIDORES</h1>
+  </div>
+  
+  <div class="content">
+    <!-- Servidor premium -->
+  <div class="container yellow-shadow">
+        <div class="number">1</div>
+        <h2>RocketMC</h2>
+        <p><strong>IP y Puerto:</strong> RocketMC.sytes.net:8149</p>
+        <p><strong>Versión:</strong> 0.15.10</p>
+        <p><strong>Descripción:</strong> Minijuegos divertidos y survival</p>
+        <p><strong>Tipo:</strong> Minigames - Survival</p>
+        <button class="copy-btn" onclick="copyToClipboard('104.167.222.158:8149')">Copiar IP y Puerto</button>
+      <div class="premium">
+            <span class="star">&#9733;</span>
+            <p>PREMIUM</p>
+        </div>
+    </div>
 
+    <!-- Servidores no premium -->
+    
+<div class="container">
+        <div class="number">2</div>
+        <h2>Mi Servidor</h2>
+        <p><strong>IP y Puerto:</strong> miservidor.premium.es:19323</p>
+        <p><strong>Versión:</strong> 0.15.10</p>
+        <p><strong>Descripción:</strong> mi nuevo servidor</p>
+        <p><strong>Tipo:</strong> Minigames</p>
+        <button class="copy-btn" onclick="copyToClipboard('miservidor.premium.es:19323')">Copiar IP y Puerto</button>
+    </div>
+  </div>
+  
+     <div id="notification" class="container notification"
+        <span class="close-btn" onclick="closeNotification()">&times;</span>
+        <p id="notification-message"></p>
+     </div>
+
+      <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                showNotification('<h3>PocketmineMP Dice</h3><br><strong>IP y Puerto copiado:</strong> ' + text);
+            }, function(err) {
+                showNotification('Error al copiar: ' + err);
+            });
+        }
+
+        function showNotification(message) {
+            var notification = document.getElementById('notification');
+            var notificationMessage = document.getElementById('notification-message');
+            notificationMessage.innerHTML = message;
+            notification.style.display = 'block';
+        }
+
+        function closeNotification() {
+            var notification = document.getElementById('notification');
+            notification.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
